@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+
+    <include name="WidgetLocation">
+        <left>5</left>
+        <top>100</top>    
+    </include>
+
+    <include name="ActiveLabel">
+        <control type="label">  
+            <left>20</left>
+            <top>0</top>
+            <height>20</height>
+            <width>540</width>
+            <label>Active</label>
+            <font>font30_title</font>
+            <textcolor>white</textcolor>
+            <shadowcolor>black</shadowcolor>
+            <!--<angle>-90</angle>-->
+        </control>  
+    </include>
+    
+    <include name="RecentLabel">
+        <control type="label">
+            <left>20</left>
+            <top>0</top>
+            <height>20</height>
+            <width>480</width>
+            <label>Recent</label>
+            <font>font30_title</font>
+            <textcolor>white</textcolor>
+            <shadowcolor>black</shadowcolor>
+            <!--<angle>-90</angle>-->
+        </control>
+    </include>    
+
+      
+    <include name="WidgetItems">
+        <onleft>-</onleft>
+        <onright>-</onright>
+        <left>0</left>
+        <top>40</top>
+        <width>1280</width>
+        <height>220</height>
+        <viewtype label="535">list</viewtype>
+        <pagecontrol>-</pagecontrol>
+        <scrolltime>200</scrolltime>
+        <orientation>Horizontal</orientation>    
+        <itemlayout height="148" width="256">
+            <control type="image">
+                <left>0</left>
+                <top>0</top>
+                <width>246</width>
+                <height>138</height>
+                <texture background="true">$INFO[ListItem.Icon]</texture>
+                <bordertexture border="5">button-nofocus.png</bordertexture>
+                <bordersize>5</bordersize>
+                <aspectratio>scale</aspectratio>
+            </control>
+
+            <!-- Progress Bar -->
+            <control type="image">
+                <left>5</left>
+                <top>104</top>
+                <width>236</width>
+                <height>5</height>
+                <texture background="true">Progress\progress_$INFO[ListItem.Property(complete_percentage)].png</texture>
+                <colordiffuse>66FFFFFF</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+                <visible>!IsEmpty(ListItem.Property(complete_percentage))</visible>
+            </control>            
+
+            <!-- top label -->
+            <control type="image">
+                <left>5</left>
+                <top>5</top>
+                <width>236</width>
+                <height>24</height>
+                <aspectratio>stretch</aspectratio>
+                <texture>black-back.png</texture>
+                <visible>!IsEmpty(ListItem.Label2)</visible>
+                <colordiffuse>88FFFFFF</colordiffuse>
+            </control>            
+            <control type="label">
+                <left>10</left>
+                <top>5</top>
+                <width>226</width>
+                <height>24</height>
+                <font>font10</font>
+                <textcolor>white</textcolor>
+                <shadowcolor>black</shadowcolor>
+                <selectedcolor>selected</selectedcolor>
+                <align>left</align>
+                <aligny>center</aligny>
+                <label>$INFO[ListItem.Label2]</label>
+                <visible>!IsEmpty(ListItem.Label2)</visible>
+            </control>            
+            
+            <!-- bottom label -->
+            <control type="image">
+                <left>5</left>
+                <top>109</top>
+                <width>236</width>
+                <height>24</height>
+                <aspectratio>stretch</aspectratio>
+                <texture>black-back.png</texture>
+                <colordiffuse>88FFFFFF</colordiffuse>
+            </control>            
+            <control type="label">
+                <left>10</left>
+                <top>109</top>
+                <width>226</width>
+                <height>24</height>
+                <font>font10</font>
+                <textcolor>white</textcolor>
+                <shadowcolor>black</shadowcolor>
+                <selectedcolor>selected</selectedcolor>
+                <align>left</align>
+                <aligny>center</aligny>
+                <label>$INFO[ListItem.Label]</label>
+            </control>
+            <!--
+            <control type="label">
+                <left>10</left>
+                <top>109</top>
+                <width>226</width>
+                <height>24</height>
+                <font>font10</font>
+                <textcolor>white</textcolor>
+                <shadowcolor>black</shadowcolor>
+                <selectedcolor>selected</selectedcolor>
+                <align>left</align>
+                <aligny>center</aligny>
+                <label>$INFO[ListItem.Property(item_index)]</label>
+            </control>            
+            -->
+
+        </itemlayout>
+        <focusedlayout height="148" width="256">
+            <control type="image">
+                <left>0</left>
+                <top>0</top>
+                <width>246</width>
+                <height>138</height>
+                <texture background="true">$INFO[ListItem.Icon]</texture>
+                <bordertexture border="5">folder-focus.png</bordertexture>
+                <bordersize>5</bordersize>
+                <aspectratio>scale</aspectratio>
+            </control>
+            
+            <!-- Progress Bar -->
+            <control type="image">
+                <left>5</left>
+                <top>104</top>
+                <width>236</width>
+                <height>5</height>
+                <texture background="true">Progress\progress_$INFO[ListItem.Property(complete_percentage)].png</texture>
+                <colordiffuse>AAFFFFFF</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+                <visible>!IsEmpty(ListItem.Property(complete_percentage))</visible>
+            </control>
+
+            <!-- top label -->
+            <control type="image">
+                <left>5</left>
+                <top>5</top>
+                <width>236</width>
+                <height>24</height>
+                <aspectratio>stretch</aspectratio>
+                <texture>black-back.png</texture>
+                <visible>!IsEmpty(ListItem.Label2)</visible>
+            </control>            
+            <control type="label">
+                <left>10</left>
+                <top>5</top>
+                <width>226</width>
+                <height>24</height>
+                <font>font10</font>
+                <textcolor>white</textcolor>
+                <shadowcolor>black</shadowcolor>
+                <selectedcolor>selected</selectedcolor>
+                <align>left</align>
+                <aligny>center</aligny>
+                <label>$INFO[ListItem.Label2]</label>
+                <visible>!IsEmpty(ListItem.Label2)</visible>
+            </control>            
+            
+            <!-- bottom label -->
+            <control type="image">
+                <left>5</left>
+                <top>109</top>
+                <width>236</width>
+                <height>24</height>
+                <aspectratio>stretch</aspectratio>
+                <texture>black-back.png</texture>
+            </control>            
+            <control type="label">
+                <left>10</left>
+                <top>109</top>
+                <width>226</width>
+                <height>24</height>
+                <font>font10</font>
+                <textcolor>white</textcolor>
+                <shadowcolor>black</shadowcolor>
+                <selectedcolor>selected</selectedcolor>
+                <align>left</align>
+                <aligny>center</aligny>
+                <label>$INFO[ListItem.Label]</label>
+            </control>
+            
+            
+        </focusedlayout>        
+    </include>    
+    
+    
+	<include name="HomeRecentlyAddedInfo">
+    
+        <!-- widgets for collection No 1 -->
+        <control type="group" id="9003">
+            <defaultcontrol>8006</defaultcontrol>
+            <visible>Container(9000).Hasfocus(33001)</visible>
+            <control type="group">
+                <animation effect="fade" start="100" end="0" time="500" condition="!Control.HasFocus(8005)">Conditional</animation>
+                <animation effect="fade" start="0" end="100" time="500" condition="Control.HasFocus(8005)">Conditional</animation>
+                <include>WidgetLocation</include>
+                <include>ActiveLabel</include>
+                <control type="list" id="8005">
+                    <onup>-</onup>
+                    <ondown>8006</ondown>
+                    <include>WidgetItems</include>
+                    <content target="video">$INFO[Window.Property(xbmb3c_collection_menuitem_content_0)]&type=active</content>
+                </control>
+            </control>
+            <control type="group">
+                <animation effect="fade" start="100" end="0" time="500" condition="!Control.HasFocus(8006)">Conditional</animation>
+                <animation effect="fade" start="0" end="100" time="500" condition="Control.HasFocus(8006)">Conditional</animation>
+                <include>WidgetLocation</include>
+                <include>RecentLabel</include>
+                <control type="list" id="8006">
+                    <onup>8005</onup>
+                    <ondown>610</ondown>
+                    <include>WidgetItems</include>
+                    <content target="video">$INFO[Window.Property(xbmb3c_collection_menuitem_content_0)]&type=recent</content>
+                </control>
+            </control>
+        </control>    
+    
+        <!-- widgets for collection No 2 -->
+        <control type="group" id="9003">
+            <defaultcontrol>8008</defaultcontrol>
+            <visible>Container(9000).Hasfocus(33002)</visible>
+			<control type="group">
+                <animation effect="fade" start="100" end="0" time="500" condition="!Control.HasFocus(8007)">Conditional</animation>
+                <animation effect="fade" start="0" end="100" time="500" condition="Control.HasFocus(8007)">Conditional</animation>
+                <include>WidgetLocation</include>
+                <include>ActiveLabel</include>
+				<control type="list" id="8007">
+                    <onup>-</onup>
+                    <ondown>8008</ondown>
+                    <include>WidgetItems</include>
+                    <content target="video">$INFO[Window.Property(xbmb3c_collection_menuitem_content_1)]&type=active</content>
+				</control>
+			</control>
+			<control type="group">
+                <animation effect="fade" start="100" end="0" time="500" condition="!Control.HasFocus(8008)">Conditional</animation>
+                <animation effect="fade" start="0" end="100" time="500" condition="Control.HasFocus(8008)">Conditional</animation>
+                <include>WidgetLocation</include>
+                <include>RecentLabel</include>
+				<control type="list" id="8008">
+                    <onup>8007</onup>
+                    <ondown>610</ondown>
+                    <include>WidgetItems</include>
+                    <content target="video">$INFO[Window.Property(xbmb3c_collection_menuitem_content_1)]&type=recent</content>
+				</control>
+			</control>     
+        </control>  
+        
+        <!-- widgets for collection No 3 -->
+        <control type="group" id="9003">
+            <defaultcontrol>8010</defaultcontrol>
+            <visible>Container(9000).Hasfocus(33003)</visible>            
+			<control type="group">
+                <animation effect="fade" start="100" end="0" time="500" condition="!Control.HasFocus(8009)">Conditional</animation>
+                <animation effect="fade" start="0" end="100" time="500" condition="Control.HasFocus(8009)">Conditional</animation>
+                <include>WidgetLocation</include>
+                <include>ActiveLabel</include>
+				<control type="list" id="8009">
+                    <onup>-</onup>
+                    <ondown>8010</ondown>
+                    <include>WidgetItems</include>
+                    <content target="video">$INFO[Window.Property(xbmb3c_collection_menuitem_content_2)]&type=active</content>
+				</control>
+			</control>
+			<control type="group">
+                <animation effect="fade" start="100" end="0" time="500" condition="!Control.HasFocus(8010)">Conditional</animation>
+                <animation effect="fade" start="0" end="100" time="500" condition="Control.HasFocus(8010)">Conditional</animation>
+                <include>WidgetLocation</include>
+                <include>RecentLabel</include>
+				<control type="list" id="8010">
+                    <onup>8009</onup>
+                    <ondown>610</ondown>
+                    <include>WidgetItems</include>
+                    <content target="video">$INFO[Window.Property(xbmb3c_collection_menuitem_content_2)]&type=recent</content>
+				</control>
+			</control>          
+        </control>
+
+        <!--
+		<control type="group" id="9003">
+			<onup>-</onup>
+			<ondown>610</ondown>
+			<visible>!Window.IsVisible(Favourites)</visible>
+			<include>VisibleFadeEffect</include>
+			<animation effect="fade" time="300" delay="1000">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+            
+        </control>
+        -->
+	</include>
+</includes>
