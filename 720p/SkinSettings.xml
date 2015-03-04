@@ -453,33 +453,33 @@
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
-						<label>31108</label>
+						<label>Main Menu Buttons</label>
 						<textcolor>blue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
 					<control type="radiobutton" id="221">
-						<description>Hide Videos Button</description>
+						<description>Show Videos Button</description>
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
-						<label>$LOCALIZE[31111] - $LOCALIZE[3]</label>
+						<label>$LOCALIZE[3]</label>
 						<onclick>Skin.ToggleSetting(HomeMenuNoVideosButton)</onclick>
 						<selected>Skin.HasSetting(HomeMenuNoVideosButton)</selected>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
 					<control type="radiobutton" id="222">
-						<description>Hide Movies Button</description>
+						<description>Show Movies Button</description>
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
-						<label>$LOCALIZE[31111] - $LOCALIZE[20342] [COLOR=grey3] ($LOCALIZE[20314])[/COLOR]</label>
+						<label>$LOCALIZE[20342] [COLOR=grey3] ($LOCALIZE[20314])[/COLOR]</label>
 						<onclick>Skin.ToggleSetting(HomeMenuNoMovieButton)</onclick>
 						<selected>Skin.HasSetting(HomeMenuNoMovieButton)</selected>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -487,13 +487,13 @@
 						<enable>Library.HasContent(Movies)</enable>
 					</control>
 					<control type="radiobutton" id="223">
-						<description>Hide TV Shows Button</description>
+						<description>Show TV Shows Button</description>
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
-						<label>$LOCALIZE[31111] - $LOCALIZE[20343] [COLOR=grey3] ($LOCALIZE[20314])[/COLOR]</label>
+						<label>$LOCALIZE[20343] [COLOR=grey3] ($LOCALIZE[20314])[/COLOR]</label>
 						<onclick>Skin.ToggleSetting(HomeMenuNoTVShowButton)</onclick>
 						<selected>Skin.HasSetting(HomeMenuNoTVShowButton)</selected>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -501,52 +501,52 @@
 						<enable>Library.HasContent(TVShows)</enable>
 					</control>
 					<control type="radiobutton" id="224">
-						<description>Hide Music Button</description>
+						<description>Show Music Button</description>
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
-						<label>$LOCALIZE[31111] - $LOCALIZE[2]</label>
+						<label>$LOCALIZE[2]</label>
 						<onclick>Skin.ToggleSetting(HomeMenuNoMusicButton)</onclick>
 						<selected>Skin.HasSetting(HomeMenuNoMusicButton)</selected>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
 					<control type="radiobutton" id="225">
-						<description>Hide Pictures Button</description>
+						<description>Show Pictures Button</description>
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
-						<label>$LOCALIZE[31111] - $LOCALIZE[1]</label>
+						<label>$LOCALIZE[1]</label>
 						<onclick>Skin.ToggleSetting(HomeMenuNoPicturesButton)</onclick>
 						<selected>Skin.HasSetting(HomeMenuNoPicturesButton)</selected>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
 					<control type="radiobutton" id="226">
-						<description>Hide Programs Button</description>
+						<description>Show Programs Button</description>
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
-						<label>$LOCALIZE[31111] - $LOCALIZE[0]</label>
+						<label>$LOCALIZE[0]</label>
 						<onclick>Skin.ToggleSetting(HomeMenuNoProgramsButton)</onclick>
 						<selected>Skin.HasSetting(HomeMenuNoProgramsButton)</selected>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
 					<control type="radiobutton" id="228">
-						<description>Hide Weather Button</description>
+						<description>Show Weather Button</description>
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
-						<label>$LOCALIZE[31111] - $LOCALIZE[8]</label>
+						<label>$LOCALIZE[8]</label>
 						<onclick>Skin.ToggleSetting(HomeMenuNoWeatherButton)</onclick>
 						<selected>Skin.HasSetting(HomeMenuNoWeatherButton)</selected>
 						<texturefocus>MenuItemFO.png</texturefocus>

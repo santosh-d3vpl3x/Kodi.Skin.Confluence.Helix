@@ -979,7 +979,7 @@
 						<onclick condition="System.Platform.Android">ActivateWindow(Programs)</onclick>
 						<icon>-</icon>
 						<thumb>-</thumb>
-						<visible>!Skin.HasSetting(HomeMenuNoProgramsButton)</visible>
+						<visible>Skin.HasSetting(HomeMenuNoProgramsButton)</visible>
 					</item>
 
                     <item id="7">
@@ -987,7 +987,7 @@
 						<onclick>ActivateWindow(Weather)</onclick>
 						<icon>-</icon>
 						<thumb>-</thumb>
-						<visible>!Skin.HasSetting(HomeMenuNoWeatherButton) + !IsEmpty(Weather.Plugin)</visible>
+						<visible>Skin.HasSetting(HomeMenuNoWeatherButton) + !IsEmpty(Weather.Plugin)</visible>
 					</item>
 
 					<item id="12">
@@ -1004,7 +1004,7 @@
 						<onclick condition="!StringCompare(Window.Property(VideosDirectLink),True)">ActivateWindow(Videos,root)</onclick>
 						<icon>-</icon>
 						<thumb>-</thumb>
-						<visible>!Skin.HasSetting(HomeMenuNoVideosButton)</visible>
+						<visible>Skin.HasSetting(HomeMenuNoVideosButton)</visible>
 					</item>      
 
 					<item id="4">
@@ -1012,7 +1012,7 @@
 						<onclick>ActivateWindow(Pictures)</onclick>
 						<icon>-</icon>
 						<thumb>-</thumb>
-						<visible>!Skin.HasSetting(HomeMenuNoPicturesButton)</visible>
+						<visible>Skin.HasSetting(HomeMenuNoPicturesButton)</visible>
 					</item>                
 
 					<item id="3">
@@ -1020,7 +1020,7 @@
 						<onclick>ActivateWindow(Music)</onclick>
 						<icon>-</icon>
 						<thumb>-</thumb>
-						<visible>!Skin.HasSetting(HomeMenuNoMusicButton)</visible>
+						<visible>Skin.HasSetting(HomeMenuNoMusicButton)</visible>
 					</item>                    
 
                     <!-- added dynamic favourites menu item -->

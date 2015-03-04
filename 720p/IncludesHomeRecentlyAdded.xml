@@ -304,6 +304,156 @@
 				</control>
 			</control>          
         </control>
+        
+        <!-- widgets for collection No 4 -->
+        <control type="group" id="9003">
+            <defaultcontrol>8012</defaultcontrol>
+            <visible>Container(9000).Hasfocus(33004)</visible>            
+			<control type="group">
+                <animation effect="fade" start="100" end="0" time="500" condition="!Control.HasFocus(8011)">Conditional</animation>
+                <animation effect="fade" start="0" end="100" time="500" condition="Control.HasFocus(8011)">Conditional</animation>
+                <include>WidgetLocation</include>
+                <include>ActiveLabel</include>
+				<control type="list" id="8011">
+                    <onup>-</onup>
+                    <ondown>8012</ondown>
+                    <include>WidgetItems</include>
+                    <content target="video">$INFO[Window.Property(xbmb3c_collection_menuitem_content_3)]&type=active</content>
+				</control>
+			</control>
+			<control type="group">
+                <animation effect="fade" start="100" end="0" time="500" condition="!Control.HasFocus(8012)">Conditional</animation>
+                <animation effect="fade" start="0" end="100" time="500" condition="Control.HasFocus(8012)">Conditional</animation>
+                <include>WidgetLocation</include>
+                <include>RecentLabel</include>
+				<control type="list" id="8012">
+                    <onup>8011</onup>
+                    <ondown>610</ondown>
+                    <include>WidgetItems</include>
+                    <content target="video">$INFO[Window.Property(xbmb3c_collection_menuitem_content_3)]&type=recent</content>
+				</control>
+			</control>          
+        </control>    
+
+        <!-- widgets for collection No 5 -->
+        <control type="group" id="9003">
+            <defaultcontrol>8014</defaultcontrol>
+            <visible>Container(9000).Hasfocus(33005)</visible>            
+			<control type="group">
+                <animation effect="fade" start="100" end="0" time="500" condition="!Control.HasFocus(8013)">Conditional</animation>
+                <animation effect="fade" start="0" end="100" time="500" condition="Control.HasFocus(8013)">Conditional</animation>
+                <include>WidgetLocation</include>
+                <include>ActiveLabel</include>
+				<control type="list" id="8013">
+                    <onup>-</onup>
+                    <ondown>8014</ondown>
+                    <include>WidgetItems</include>
+                    <content target="video">$INFO[Window.Property(xbmb3c_collection_menuitem_content_4)]&type=active</content>
+				</control>
+			</control>
+			<control type="group">
+                <animation effect="fade" start="100" end="0" time="500" condition="!Control.HasFocus(8014)">Conditional</animation>
+                <animation effect="fade" start="0" end="100" time="500" condition="Control.HasFocus(8014)">Conditional</animation>
+                <include>WidgetLocation</include>
+                <include>RecentLabel</include>
+				<control type="list" id="8014">
+                    <onup>8013</onup>
+                    <ondown>610</ondown>
+                    <include>WidgetItems</include>
+                    <content target="video">$INFO[Window.Property(xbmb3c_collection_menuitem_content_4)]&type=recent</content>
+				</control>
+			</control>          
+        </control> 
+
+        <!-- widgets for collection No 6 -->
+        <control type="group" id="9003">
+            <defaultcontrol>8016</defaultcontrol>
+            <visible>Container(9000).Hasfocus(33006)</visible>            
+			<control type="group">
+                <animation effect="fade" start="100" end="0" time="500" condition="!Control.HasFocus(8015)">Conditional</animation>
+                <animation effect="fade" start="0" end="100" time="500" condition="Control.HasFocus(8015)">Conditional</animation>
+                <include>WidgetLocation</include>
+                <include>ActiveLabel</include>
+				<control type="list" id="8015">
+                    <onup>-</onup>
+                    <ondown>8016</ondown>
+                    <include>WidgetItems</include>
+                    <content target="video">$INFO[Window.Property(xbmb3c_collection_menuitem_content_5)]&type=active</content>
+				</control>
+			</control>
+			<control type="group">
+                <animation effect="fade" start="100" end="0" time="500" condition="!Control.HasFocus(8016)">Conditional</animation>
+                <animation effect="fade" start="0" end="100" time="500" condition="Control.HasFocus(8016)">Conditional</animation>
+                <include>WidgetLocation</include>
+                <include>RecentLabel</include>
+				<control type="list" id="8016">
+                    <onup>8015</onup>
+                    <ondown>610</ondown>
+                    <include>WidgetItems</include>
+                    <content target="video">$INFO[Window.Property(xbmb3c_collection_menuitem_content_5)]&type=recent</content>
+				</control>
+			</control>          
+        </control>       
+
+        <!-- widgets for collection No 7 -->
+        <control type="group" id="9003">
+            <defaultcontrol>8018</defaultcontrol>
+            <visible>Container(9000).Hasfocus(33007)</visible>            
+			<control type="group">
+                <animation effect="fade" start="100" end="0" time="500" condition="!Control.HasFocus(8017)">Conditional</animation>
+                <animation effect="fade" start="0" end="100" time="500" condition="Control.HasFocus(8017)">Conditional</animation>
+                <include>WidgetLocation</include>
+                <include>ActiveLabel</include>
+				<control type="list" id="8017">
+                    <onup>-</onup>
+                    <ondown>8018</ondown>
+                    <include>WidgetItems</include>
+                    <content target="video">$INFO[Window.Property(xbmb3c_collection_menuitem_content_6)]&type=active</content>
+				</control>
+			</control>
+			<control type="group">
+                <animation effect="fade" start="100" end="0" time="500" condition="!Control.HasFocus(8018)">Conditional</animation>
+                <animation effect="fade" start="0" end="100" time="500" condition="Control.HasFocus(8018)">Conditional</animation>
+                <include>WidgetLocation</include>
+                <include>RecentLabel</include>
+				<control type="list" id="8018">
+                    <onup>8017</onup>
+                    <ondown>610</ondown>
+                    <include>WidgetItems</include>
+                    <content target="video">$INFO[Window.Property(xbmb3c_collection_menuitem_content_6)]&type=recent</content>
+				</control>
+			</control>          
+        </control>
+
+        <!-- widgets for collection No 8 -->
+        <control type="group" id="9003">
+            <defaultcontrol>8020</defaultcontrol>
+            <visible>Container(9000).Hasfocus(33008)</visible>            
+			<control type="group">
+                <animation effect="fade" start="100" end="0" time="500" condition="!Control.HasFocus(8019)">Conditional</animation>
+                <animation effect="fade" start="0" end="100" time="500" condition="Control.HasFocus(8019)">Conditional</animation>
+                <include>WidgetLocation</include>
+                <include>ActiveLabel</include>
+				<control type="list" id="8019">
+                    <onup>-</onup>
+                    <ondown>8020</ondown>
+                    <include>WidgetItems</include>
+                    <content target="video">$INFO[Window.Property(xbmb3c_collection_menuitem_content_7)]&type=active</content>
+				</control>
+			</control>
+			<control type="group">
+                <animation effect="fade" start="100" end="0" time="500" condition="!Control.HasFocus(8020)">Conditional</animation>
+                <animation effect="fade" start="0" end="100" time="500" condition="Control.HasFocus(8020)">Conditional</animation>
+                <include>WidgetLocation</include>
+                <include>RecentLabel</include>
+				<control type="list" id="8020">
+                    <onup>8019</onup>
+                    <ondown>610</ondown>
+                    <include>WidgetItems</include>
+                    <content target="video">$INFO[Window.Property(xbmb3c_collection_menuitem_content_7)]&type=recent</content>
+				</control>
+			</control>          
+        </control>        
 
         <!--
 		<control type="group" id="9003">
