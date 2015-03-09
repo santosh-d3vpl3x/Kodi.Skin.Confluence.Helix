@@ -7,6 +7,21 @@
 	<onunload>ClearProperty(Xbmb3cContent, Home)</onunload>
 	<controls>
 		<include>CommonBackground</include>
+        
+        <control type="image">
+            <description>MB3 Selected Item FanArt Background</description>
+			<left>0</left>
+			<top>0</top>
+			<width>1280</width>
+			<height>720</height>
+			<aspectratio>scale</aspectratio>
+			<texture background="true">$INFO[Window(Home).Property(MB3.Background.Item.FanArt)]</texture>
+			<include>backgroundfade</include>
+			<fadetime>1000</fadetime>
+            <visible>true</visible>
+			<include>Window_OpenClose_Animation</include>
+		</control>
+        
 		<include>ContentPanelBackgrounds</include>
 		<control type="group">
 			<include>Window_OpenClose_Animation</include>		

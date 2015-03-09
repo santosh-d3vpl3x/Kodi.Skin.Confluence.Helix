@@ -81,23 +81,9 @@
 			<texture background="true">$INFO[Window(Home).Property(MB3.Background.Global.FanArt)]</texture>
 			<visible>true</visible>
 			<include>backgroundfade</include>
-			<fadetime>FanartCrossfadeTime</fadetime>
+			<fadetime>1000</fadetime>
             <colordiffuse>FF666666</colordiffuse>
 		</control>  
-        <control type="image">
-            <description>MB3 Selected Item FanArt Background</description>
-			<left>0</left>
-			<top>0</top>
-			<width>1280</width>
-			<height>720</height>
-			<aspectratio>scale</aspectratio>
-			<texture background="true">$INFO[Window(Home).Property(MB3.Background.Item.FanArt)]</texture>
-			<include>backgroundfade</include>
-			<fadetime>FanartCrossfadeTime</fadetime>
-			<!--<visible>!IsEmpty(Window(Home).Property(MB3.Background.Item.FanArt))</visible>-->
-            <visible>true</visible>
-			<include>Window_OpenClose_Animation</include>
-		</control>
 	</include>
 	<include name="ContentPanelBackgrounds">
 		<control type="image">
