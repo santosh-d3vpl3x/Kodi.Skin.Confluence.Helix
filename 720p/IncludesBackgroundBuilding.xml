@@ -96,6 +96,8 @@
 			<animation effect="slide" start="0,0" end="0,10" time="200" condition="Window.Next(Home)">WindowClose</animation>
 		</control>
 		<control type="group">
+            <visible>!IsEmpty(Window.Property(IsCustomContent))</visible>
+            <!--<animation effect="fade" start="0" end="100" time="2000" condition="Window.Previous(Home)">WindowOpen</animation>-->
 			<include>Window_OpenClose_Animation</include>
 			<control type="group">
 				<include>VisibleFadeEffect</include>

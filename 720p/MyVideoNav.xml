@@ -4,7 +4,9 @@
 	<allowoverlay>no</allowoverlay>
 	<views>50,51,500,522,550,551,560,501,508,504,503,515,505,511</views>
 	<onload condition="!Skin.HasSetting(FirstTimeRun)">ActivateWindow(1112)</onload>
-	<onunload>ClearProperty(Xbmb3cContent, Home)</onunload>
+    <onunload>ClearProperty(Xbmb3cContent, Home)</onunload>
+    <onload>SetProperty(IsCustomContent,true)</onload>
+    <onunload>ClearProperty(IsCustomContent)</onunload>
 	<controls>
 		<include>CommonBackground</include>
         
