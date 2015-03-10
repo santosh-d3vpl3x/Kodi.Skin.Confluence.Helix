@@ -111,7 +111,7 @@
                         <textwidth>235</textwidth>
                         <include>ButtonCommonValues</include>
                         <label>Default Views</label>
-                        <onclick>RunScript(plugin.video.xbmb3c,showsetviews)</onclick>
+                        <onclick>RunAddon(plugin.video.xbmb3c,"?mode=3&url=http%3a%2f%2fSETVIEWSSETVIEWS")</onclick>
                     </control>
                     <control type="button" id="3">
                         <description>Sort by button</description>
